@@ -14,8 +14,8 @@ def get_access_token():
 
 def get_user_info():
     end_point = url + "/api/v1/users/me"
-    acces_token = get_access_token()
-    headers = {"Authorization": f"Bearer {acces_token}"}
+    access_token = get_access_token()
+    headers = {"Authorization": f"Bearer {access_token}"}
 
     resp = httpx.get(end_point, headers=headers)
     print(resp.json())
