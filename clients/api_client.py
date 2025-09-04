@@ -5,13 +5,13 @@ from httpx._types import RequestData, RequestFiles
 
 
 class ApiClient:
-    def __init__(self, cleint: Client):
+    def __init__(self, client: Client):
         """
         Базовый API клиент, принимающий объект httpx.Client.
 
         :param client: экземпляр httpx.Client для выполнения HTTP-запросов
         """
-        self.client = cleint
+        self.client = client
 
     def get(self, url: URL | str, params: QueryParams | None = None) -> Response:
         """
