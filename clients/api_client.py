@@ -1,5 +1,5 @@
 from __future__ import annotations
-from httpx import Client, URL, Response, QueryParams
+from httpx import Client, URL, Response
 from typing import Any
 from httpx._types import RequestData, RequestFiles
 
@@ -13,7 +13,7 @@ class ApiClient:
         """
         self.client = client
 
-    def get(self, url: URL | str, params: QueryParams | None = None) -> Response:
+    def get(self, url: URL | str, params: Any | None = None) -> Response:
         """
         Выполняет GET-запрос.
 
