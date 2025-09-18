@@ -1,4 +1,4 @@
-from tools.fakers import get_random_email
+from tools.fakers import fake
 import httpx
 
 
@@ -6,7 +6,7 @@ url = "http://127.0.0.1:8000"
 def create_user():
     end_point = url + "/api/v1/users"
     payload = {
-        "email": get_random_email(),
+        "email": fake.email(),
         "password": "12345",
         "lastName": "string",
         "firstName": "string",
@@ -30,7 +30,7 @@ def patch_user(user_id, token):
     end_point = url + f"/api/v1/users/{user_id}"
     headers = {"Authorization": f"Bearer {token}"}
     payload = {
-        "email": get_random_email(),
+        "email": fake.email(),
         "lastName": "string",
         "firstName": "string",
         "middleName": "string"
