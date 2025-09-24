@@ -8,11 +8,9 @@ import pytest
 
 @pytest.mark.regression
 @pytest.mark.users
-def test_create_user():
-    public_users_client = get_public_user_client()
-
+def test_create_user(public_user_client: PublicUsersClient):
     request = CreateUserRequestSchema()
-    response = public_users_client.create_user_api(request)
+    response = public_user_client.create_user_api(request)
     response_data = CreateUserResponseSchema.model_validate_json(response.text)
 
     assert_status_code(response.status_code, HTTPStatus.OK)
