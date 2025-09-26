@@ -10,6 +10,7 @@ class PrivateUserClient(ApiClient):
     """
     Клиент для работы с /api/v1/users
     """
+
     def get_user_me_api(self) -> Response:
         """
         Метод получения текущего юзера
@@ -51,6 +52,7 @@ class PrivateUserClient(ApiClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.patch(url=f"/api/v1/users/{user_id}")
+
 
 def get_private_user_client(user: AuthenticationUserSchema) -> PrivateUserClient:
     """
