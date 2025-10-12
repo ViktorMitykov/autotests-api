@@ -5,12 +5,21 @@ from http import HTTPStatus
 from tools.assertions.schema import validate_json_schema
 from tools.assertions.base import assert_status_code
 from tools.assertions.users import assert_create_user_response, assert_get_user_response
+from tools.fakers import fake
 import pytest
+
 
 @pytest.mark.regression
 @pytest.mark.users
-def test_create_user(public_user_client: PublicUsersClient):
-    request = CreateUserRequestSchema()
+@pytest.mark.parametrize("email",
+                         [
+                             pytest.param(fake.email("mail.ru")),
+                             pytest.param(fake.email("gmail.com")),
+                             pytest.param(fake.email("example.com"))
+                         ]
+                         )
+def test_create_user(email: str, public_user_client: PublicUsersClient):
+    request = CreateUserRequestSchema(email=email)
     response = public_user_client.create_user_api(request)
     response_data = CreateUserResponseSchema.model_validate_json(response.text)
 
@@ -28,5 +37,3 @@ def test_get_user_me(function_user, private_user_client: PrivateUserClient):
     assert_status_code(response.status_code, HTTPStatus.OK)
     assert_get_user_response(response_data, function_user.response)
     validate_json_schema(response.json(), response_data.model_json_schema())
-
-
