@@ -3,7 +3,8 @@ from pydantic import BaseModel
 
 from fixtures.courses import CoursesFixture
 from fixtures.users import UserFixture
-from clients.exercises.exercises_client import CreateExercisesRequestSchema, CreateExerciseResponseSchema, get_exercises_client, ExercisesClient
+from clients.exercises.exercises_client import get_exercises_client, ExercisesClient
+from clients.exercises.exercises_schema import CreateExercisesRequestSchema, CreateExerciseResponseSchema
 
 
 

@@ -8,7 +8,7 @@ from clients.authentication.authentication_schema import LoginRequestSchema
 
 
 
-class AuthenticationUserSchema(BaseModel, frozenset=True):
+class AuthenticationUserSchema(BaseModel, frozen=True):
     email: str
     password: str
 
