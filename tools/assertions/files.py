@@ -1,8 +1,8 @@
-from clients.errors_schema import ValidationErrorResponseSchema, ValidationErrorSchema
+from clients.errors_schema import ValidationErrorResponseSchema, ValidationErrorSchema, IternalErrorResponseSchema
 from clients.files.files_schema import CreateFileResponseSchema, CreateFileRequestSchema, GetFileResponseSchema, \
     FileSchema
 from tools.assertions.base import assert_equal
-from tools.assertions.errors import assert_validation_error_response
+from tools.assertions.errors import assert_validation_error_response, assert_iternal_error_response
 
 
 def assert_file(actual: FileSchema, expected: FileSchema):
@@ -88,4 +88,35 @@ def assert_create_file_with_empty_directory_response(actual: ValidationErrorResp
             )
         ]
     )
+    assert_validation_error_response(actual, expected)
+
+def assert_file_not_found_response(actual: IternalErrorResponseSchema):
+    """
+    Функция для проверки ошибки, если файл не найден на сервере.
+
+    :param actual: Фактический ответ.
+    :raises AssertionError: Если фактический ответ не соответствует ошибке "File not found"
+    """
+    expected = IternalErrorResponseSchema(details="File not found")
+    assert_iternal_error_response(actual, expected)
+
+def assert_get_file_with_incorrect_id_response(actual: ValidationErrorResponseSchema):
+    """
+    Проверяет, что ответ на создание файла с неккоректным форматом id соответствует ожидаемой валидационной ошибке.
+
+    :param actual: Ответ от API с ошибкой валидации, который необходимо проверить.
+    :raises AssertionError: Если фактический ответ не соответствует ожидаемому.
+    """
+    expected = ValidationErrorResponseSchema(
+        details=[
+            ValidationErrorSchema(
+                type="uuid_parsing",
+                location=["path", "file_id"],
+                message="Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1",
+                input="incorrect-file-id",
+                context={"error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1"}
+            )
+        ]
+    )
+
     assert_validation_error_response(actual, expected)
