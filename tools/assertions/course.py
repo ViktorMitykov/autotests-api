@@ -1,4 +1,5 @@
-from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCourseResponseSchema, CourseSchema, GetCoursesResponseSchema, CreateCourseResponseSchema
+from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCourseResponseSchema, CourseSchema, \
+    GetCoursesResponseSchema, CreateCourseResponseSchema, CreateCourseRequestSchema
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
@@ -52,3 +53,20 @@ def assert_get_courses_response(
     for index, create_course_response in enumerate(create_course_responses):
         assert_course(get_courses_response.courses[index], create_course_response.course)
 
+def assert_create_course_response(
+        create_course_response: CreateCourseResponseSchema,
+        create_course_request: CreateCourseRequestSchema
+):
+    """
+    Функция проверяет что поля ответа создания курса соответствует запросу на создание
+    :param create_course_response:
+    :param create_course_request:
+    :return:
+    """
+    assert_equal(create_course_response.course.title, create_course_request.title, "title")
+    assert_equal(create_course_response.course.max_score, create_course_request.max_score, "max_score")
+    assert_equal(create_course_response.course.min_score, create_course_request.min_score, "min_score")
+    assert_equal(create_course_response.course.description, create_course_request.description, "description")
+    assert_equal(create_course_response.course.estimated_time, create_course_request.estimated_time, "estimated_time")
+    assert_equal(create_course_response.course.preview_file.id, create_course_request.preview_file_id, "preview_file_id")
+    assert_equal(create_course_response.course.created_by_user.id, create_course_request.created_by_user_id, "created_by_user_id")
