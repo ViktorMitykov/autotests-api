@@ -1,7 +1,5 @@
 from typing import Any, Sized
 
-from pydantic import BaseModel, Field, ConfigDict
-
 
 def assert_status_code(actual: int, expected: int):
     """
