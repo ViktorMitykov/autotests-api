@@ -7,17 +7,18 @@ from clients.exercises.exercises_client import get_exercises_client, ExercisesCl
 from clients.exercises.exercises_schema import CreateExercisesRequestSchema, CreateExerciseResponseSchema
 
 
-
 class ExerciseFixture(BaseModel):
     request: CreateExercisesRequestSchema
     response: CreateExerciseResponseSchema
+
 
 @pytest.fixture
 def exercises_client(function_user: UserFixture) -> ExercisesClient:
     return get_exercises_client(function_user.authentication_user)
 
+
 @pytest.fixture
-def function_exercises(exercises_client: ExercisesClient, function_course: CoursesFixture) -> ExerciseFixture:
-    request = CreateExercisesRequestSchema(courses_id=function_course.response.course.id)
+def function_exercises(exercises_client: ExercisesClient, function_courses: CoursesFixture) -> ExerciseFixture:
+    request = CreateExercisesRequestSchema(courses_id=function_courses.response.course.id)
     response = exercises_client.create_exercise(request)
     return ExerciseFixture(request=request, response=response)

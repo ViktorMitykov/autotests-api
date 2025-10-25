@@ -38,7 +38,7 @@ class GetExerciseResponseSchema(BaseModel):
 
 class CreateExercisesRequestSchema(BaseModel):
     """
-    Описание структуры запроса для создание упражнение
+    Описание структуры запроса для создания упражнение
     """
     title: str = Field(default_factory=fake.sentence)
     course_id: str = Field(alias="courseId", default_factory=fake.uuid4)
@@ -71,5 +71,3 @@ class UpdateExerciseResponseApiSchema(BaseModel):
     """
     exercise: ExerciseSchema
 
-a = (1, 2, 3, 4)
-print(a)

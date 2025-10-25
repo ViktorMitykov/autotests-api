@@ -38,7 +38,6 @@ def assert_get_user_response(get_user_response: GetUserResponseSchema, create_us
 
     :param get_user_response: Ответ от метода получения пользователя
     :param create_user_response: Ответ от метода создания пользователя
-    :return:
     """
     assert_user(get_user_response.user, create_user_response.user)
 
