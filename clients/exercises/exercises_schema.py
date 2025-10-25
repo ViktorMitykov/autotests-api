@@ -17,12 +17,12 @@ class ExerciseSchema(BaseModel):
     description: str
     estimated_time: str = Field(alias="estimatedTime")
 
-class GetExerciseQuerySchema(BaseModel):
+class GetExercisesQuerySchema(BaseModel):
     """
     Описание структуры запроса для получения упражнение
     """
     model_config = ConfigDict(populate_by_name=True)
-    courseId: str = Field(alias="courseId")
+    course_id: str = Field(alias="courseId")
 
 class GetExercisesResponseSchema(BaseModel):
     """
@@ -40,6 +40,7 @@ class CreateExercisesRequestSchema(BaseModel):
     """
     Описание структуры запроса для создания упражнение
     """
+    model_config = ConfigDict(populate_by_name=True)
     title: str = Field(default_factory=fake.sentence)
     course_id: str = Field(alias="courseId", default_factory=fake.uuid4)
     max_score: int = Field(alias="maxScore", default_factory=fake.max_score)

@@ -3,14 +3,14 @@ from __future__ import annotations
 from clients.api_client import ApiClient
 from httpx import Response
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
-from clients.exercises.exercises_schema import GetExerciseQuerySchema, GetExerciseResponseSchema, CreateExercisesRequestSchema, CreateExerciseResponseSchema, UpdateExerciseRequestApiSchema, UpdateExerciseResponseApiSchema
+from clients.exercises.exercises_schema import GetExercisesQuerySchema, GetExerciseResponseSchema, CreateExercisesRequestSchema, CreateExerciseResponseSchema, UpdateExerciseRequestApiSchema, UpdateExerciseResponseApiSchema
 
 
 class ExercisesClient(ApiClient):
     """
     Клиент для работы с /api/v1/exercises
     """
-    def get_exercises_api(self, query: GetExerciseQuerySchema) -> Response:
+    def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
         Метод получения курсов
         :param query: Словарь с courseId
@@ -19,7 +19,7 @@ class ExercisesClient(ApiClient):
         return self.get(url="/api/v1/exercises",
                         params=query.model_dump(by_alias=True))
 
-    def get_exrcises(self, query: GetExerciseQuerySchema) -> GetExerciseResponseSchema:
+    def get_exrcises(self, query: GetExercisesQuerySchema) -> GetExerciseResponseSchema:
         """
         Метод получения курсов
         :param query: Словарь с courseId
