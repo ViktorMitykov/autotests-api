@@ -1,7 +1,9 @@
+from clients.errors_schema import IternalErrorResponseSchema
 from clients.exercises.exercises_schema import CreateExerciseResponseSchema, CreateExercisesRequestSchema, \
     ExerciseSchema, GetExerciseResponseSchema, UpdateExerciseRequestApiSchema, UpdateExerciseResponseApiSchema
 from clients.users.users_schema import GetUserResponseSchema, CreateUserResponseSchema
 from tools.assertions.base import assert_equal
+from tools.assertions.errors import assert_iternal_error_response
 
 
 def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
@@ -62,3 +64,13 @@ def asser_update_exercise_response(actual: UpdateExerciseResponseApiSchema, expe
     assert_equal(actual.exercise.description, expected.description, "description")
     assert_equal(actual.exercise.order_index, expected.order_index, "order_index")
     assert_equal(actual.exercise.estimated_time, expected.estimated_time, "estimated_time")
+
+def assert_exercise_not_found_response(actual: IternalErrorResponseSchema):
+    """
+    Функция для проверки ошибки, если задание не найдено на сервере.
+
+    :param actual: Фактический ответ.
+    :raises AssertionError: Если фактический ответ не соответствует ошибке "Exercise not found"
+    """
+    expected = IternalErrorResponseSchema(details="Exercise not found")
+    assert_iternal_error_response(actual, expected)
