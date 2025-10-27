@@ -67,3 +67,5 @@ class TestExercises:
         assert_get_exercises_response(response_data, [function_exercises.response])
 
         validate_json_schema(response.json(), response_data.model_json_schema())
+
+# Для коммита удаления задания
