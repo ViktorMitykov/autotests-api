@@ -1,13 +1,17 @@
-from clients.api_client import ApiClient
+import allure
 from httpx import Response
-from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
+
+from clients.api_client import ApiClient
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema
+from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 
 
 class FilesClient(ApiClient):
     """
     Клиент для работы с /api/v1/files
     """
+
+    @allure.step("Get file by id {file_id}")
     def get_file_api(self, file_id: str) -> Response:
         """
         Метод получения файла.
@@ -16,6 +20,7 @@ class FilesClient(ApiClient):
         """
         return self.get(url=f"/api/v1/files/{file_id}")
 
+    @allure.step("Delete file by id {file_id}")
     def delete_file_api(self, file_id: str) -> Response:
         """
         Метод удаления объекта
@@ -24,6 +29,7 @@ class FilesClient(ApiClient):
         """
         return self.delete(url=f"/api/v1/files/{file_id}")
 
+    @allure.step("Create file")
     def create_file_api(self, request: CreateFileRequestSchema) -> Response:
         """
         Метод создания объекта
@@ -38,6 +44,7 @@ class FilesClient(ApiClient):
     def create_file(self, request: CreateFileRequestSchema) -> CreateFileResponseSchema:
         response = self.create_file_api(request)
         return CreateFileResponseSchema.model_validate_json(response.text)
+
 
 def get_files_client(user: AuthenticationUserSchema) -> FilesClient:
     """

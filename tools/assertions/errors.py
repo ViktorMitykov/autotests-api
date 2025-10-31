@@ -1,8 +1,12 @@
+import allure
+
 from clients.errors_schema import ValidationErrorSchema, ValidationErrorResponseSchema, IternalErrorResponseSchema
 from tools.assertions.base import assert_equal, assert_length
 
 
-def assert_validation_error(actual: ValidationErrorSchema, expected: ValidationErrorSchema):
+@allure.step("Check validate error")
+def assert_validation_error(actual: ValidationErrorSchema,
+                            expected: ValidationErrorSchema):
     """
     Проверяет, что объект ошибки валидации соответствует ожидаемому значению.
 
@@ -17,10 +21,9 @@ def assert_validation_error(actual: ValidationErrorSchema, expected: ValidationE
     assert_equal(actual.location, expected.location, "location")
 
 
-def assert_validation_error_response(
-        actual: ValidationErrorResponseSchema,
-        expected: ValidationErrorResponseSchema
-):
+@allure.step("Check validate error response")
+def assert_validation_error_response(actual: ValidationErrorResponseSchema,
+                                     expected: ValidationErrorResponseSchema):
     """
     Проверяет, что объект ответа API с ошибками валидации (`ValidationErrorResponseSchema`)
     соответствует ожидаемому значению.
@@ -35,10 +38,9 @@ def assert_validation_error_response(
         assert_validation_error(actual.details[index], detail)
 
 
-def assert_iternal_error_response(
-        actual: IternalErrorResponseSchema,
-        expected: IternalErrorResponseSchema
-):
+@allure.step("Check iternal error response")
+def assert_iternal_error_response(actual: IternalErrorResponseSchema,
+                                  expected: IternalErrorResponseSchema):
     """
     Функция для проверки внутренней ошибки. Например, ошибки 404 (File not found).
 
