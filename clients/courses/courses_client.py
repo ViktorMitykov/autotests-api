@@ -1,7 +1,8 @@
+from __future__ import annotations
+
 import allure
 from httpx import Response
 
-from __future__ import annotations
 from clients.api_client import ApiClient
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 from clients.courses.courses_schema import GetCoursesQuerySchema, CreateCourseRequestSchema, CreateCourseResponseSchema, UpdateCourseRequestSchema

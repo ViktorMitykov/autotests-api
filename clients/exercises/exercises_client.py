@@ -1,7 +1,8 @@
+from __future__ import annotations
+
 import allure
 from httpx import Response
 
-from __future__ import annotations
 from clients.api_client import ApiClient
 from httpx import Response
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
@@ -51,7 +52,7 @@ class ExercisesClient(ApiClient):
         response = self.get_exercise_api(exercise_id)
         return GetExerciseResponseSchema.model_validate_json(response.text)
 
-    @allure.step("create exercises by id {exercise_id}")
+    @allure.step("create exercises")
     def create_exercise_api(self,
                             request: CreateExercisesRequestSchema) -> Response:
         """
