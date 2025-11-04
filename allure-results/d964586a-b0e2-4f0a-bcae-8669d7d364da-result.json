@@ -1,1 +1,0 @@
-{"name": "Update course", "status": "skipped", "start": 1762173130638, "stop": 1762173130638, "uuid": "865cf5f7-38da-431f-a8ac-7685040f6f57", "testCaseId": "74f144dd5eee63e1df56ab0e869d7d55", "fullName": "tests.courses.test_courses.TestCourses#test_update_course", "titlePath": ["tests", "courses", "test_courses.py", "TestCourses"]}
