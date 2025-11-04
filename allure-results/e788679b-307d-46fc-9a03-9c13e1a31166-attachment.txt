@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjUxOjQ3Ljg5MTY0MyIsInVzZXJfaWQiOiJlZmU5OWRiNy0zOWJmLTRmNDMtYjc3MC1jYjhhNzUwOTJkOGMifQ.BgjYOclI00-Yknhnt576koAiyG8oLYWGF_0UXgnK61Y' \
+  -H 'content-length: 607' \
+  -H 'content-type: application/json' \
+  -d '{"title":"При штаб исследование четыре.","maxScore":77,"minScore":8,"description":"Направо пространство штаб палка хозяйка витрина снимать мальчишка. Доставать анализ оставить ложиться помолчать изображать. Четыре песенка слишком коммунизм банк. Посвятить намерение миллиард.","estimatedTime":"4 weeks","previewFileId":"e88b4e0b-403d-40e9-b0d1-b20ebf49b05c","createdByUserId":"efe99db7-39bf-4f43-b770-cb8a75092d8c"}'

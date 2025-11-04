@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjQ5OjM3LjY2NTYzMCIsInVzZXJfaWQiOiI1MmU5NjljNS1jNDMzLTQwYzMtOTAzNi0wMzUxNDhkYmNlMDQifQ.-qrxDXAh7jESsRb4YCYRwSPjgV14xf4pVXolHppKCYo' \
+  -H 'content-length: 389' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Спичка издали важный вообще хозяйка очутиться.","maxScore":71,"minScore":5,"description":"Поколение собеседник рот неожиданно темнеть спорт хозяйка.","estimatedTime":"3 weeks","previewFileId":"12835ca0-a9c5-446b-9607-69f24721c7bc","createdByUserId":"52e969c5-c433-40c3-9036-035148dbce04"}'

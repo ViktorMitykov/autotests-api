@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjA0OjEwLjcwMjA1MyIsInVzZXJfaWQiOiI2MTFlY2U2Ny1jMTQzLTQ5N2UtYWE2OC01MzdlN2ViM2Q3ZWQifQ.IXkZOsnJg1CSfe26Fy4n8msWXt__rEWfZ5D2UVQWbUM' \
+  -H 'content-length: 637' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Сверкающий гулять бабочка трубка падать чем казнь.","maxScore":92,"minScore":24,"description":"Отметить казнь мелькнуть угроза около ученый перебивать. Мотоцикл чем спалить художественный темнеть командование возникновение.\nТяжелый палец стакан торговля космос.\nКосмос сынок тесно.","estimatedTime":"1 weeks","previewFileId":"0f5337d9-9e99-4985-abb0-d922cea89396","createdByUserId":"611ece67-c143-497e-aa68-537e7eb3d7ed"}'

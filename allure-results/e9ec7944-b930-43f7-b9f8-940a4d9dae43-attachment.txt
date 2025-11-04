@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjQ5OjI2LjMwNTYyOCIsInVzZXJfaWQiOiJlZmJhMDE0Yi1mODNiLTRhYTktODAwNS04Mzk3N2FjNDU0NzEifQ.RYvVNd3e9SzxehEi4sPZ1lBC1W1vjY6c2WCSTiNFDnw' \
+  -H 'content-length: 590' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Грустный налоговый сопровождаться мальчишка устройство аллея.","maxScore":78,"minScore":30,"description":"Полюбить радость о сутки тюрьма.\nТермин песня головной грустный одиннадцать человечек. Еврейский один реклама изба носок совет соответствие пропасть.","estimatedTime":"10 weeks","previewFileId":"3bed8ca3-5cca-48d3-851a-bc4b41201357","createdByUserId":"efba014b-f83b-4aa9-8005-83977ac45471"}'

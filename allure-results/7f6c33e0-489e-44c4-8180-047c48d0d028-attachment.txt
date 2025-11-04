@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjA0OjA3LjY2NDQ5OSIsInVzZXJfaWQiOiJhYzMxYTAzOS0zYjY4LTQ4MzEtOTkyMS1jOGRkOTkxOWVmMWUifQ.PCRkYzoeflBO2h9xIyaCBwANn2YiZAgbM1BCZjUcYYc' \
+  -H 'content-length: 557' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Сбросить нервно точно покидать пол издали.","courseId":"473b5c67-237c-49cd-bc27-b19c512f0578","maxScore":65,"minScore":25,"orderIndex":93,"description":"Порода мелочь неудобно банк да. Деловой монета тревога плод. Угол заложить эпоха интернет.\nГоловка светило оборот через расстегнуть. Отражение основание пересечь князь результат.","estimatedTime":"9 weeks"}'

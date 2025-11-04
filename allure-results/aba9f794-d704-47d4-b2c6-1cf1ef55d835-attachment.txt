@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjQ5OjM1LjM2MDA4OSIsInVzZXJfaWQiOiJjZGIxMTk5My05MDQzLTQ0MzUtYjdiZC02MjBkMmY1MGE2NDgifQ.zDvnZBBxG6b_hjUICJzTj_OqPv003bUjAJ80yP7-Zh4' \
+  -H 'content-length: 479' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Заведение ныне торопливый вряд избегать ответить дальний.","maxScore":79,"minScore":5,"description":"Падаль ремень зеленый. Пасть карман отметить интеллектуальный. Монета вариант наткнуться через.","estimatedTime":"10 weeks","previewFileId":"857052c4-5707-4ef2-ac5a-eb28c2aff8c4","createdByUserId":"cdb11993-9043-4435-b7bd-620d2f50a648"}'

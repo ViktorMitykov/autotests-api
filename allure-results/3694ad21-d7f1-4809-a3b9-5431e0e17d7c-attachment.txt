@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjUxOjUzLjQzMDc5OSIsInVzZXJfaWQiOiJiOTYzZTNhNy1kZWM2LTRkMTUtYTI3Zi1hZGM4MDdiYzNlNGQifQ.xw2tmPBCNqSz5UvGzSGw9dOvuJ_PYnKfcFKHM9FQuNo' \
+  -H 'content-length: 506' \
+  -H 'content-type: application/json' \
+  -d '{"title":"При песенка военный следовательно избегать полоска.","maxScore":72,"minScore":14,"description":"Присесть поговорить коммунизм наткнуться чем головной. Хотеть передо доставать виднеться пространство беспомощный.","estimatedTime":"7 weeks","previewFileId":"abbfb16c-65f2-4034-a6ab-1edc6b301f3f","createdByUserId":"b963e3a7-dec6-4d15-a27f-adc807bc3e4d"}'

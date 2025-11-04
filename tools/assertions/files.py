@@ -6,6 +6,9 @@ from clients.files.files_schema import CreateFileResponseSchema, CreateFileReque
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_validation_error_response, assert_iternal_error_response
 from config import settings
+from tools.logger import get_logger
+
+logger = get_logger("FILES_ASSERTIONS")
 
 
 @allure.step("Check file")
@@ -16,7 +19,8 @@ def assert_file(actual: FileSchema, expected: FileSchema):
     :param actual: Фактические данные файла.
     :param expected: Ожидаемые данные файла.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
-    """
+    """ 
+    logger.info("Check file")
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.url, expected.url, "url")
     assert_equal(actual.filename, expected.filename, "filename")
@@ -33,6 +37,7 @@ def assert_get_file_response(get_file_response: GetFileResponseSchema,
     :param create_file_response: Ответ API при создании файла.
     :raises AssertionError: Если данные файла не совпадают.
     """
+    logger.info("Check get file response")
     assert_file(get_file_response.file, create_file_response.file)
 
 
@@ -49,6 +54,7 @@ def assert_create_file_response(request: CreateFileRequestSchema,
     # Формируем ожидаемую ссылку на загруженный файл
     expected_url = f"{settings.http_client.client_url}static/{request.directory}/{request.filename}"
 
+    logger.info("Check create file response")
     assert_equal(str(response.file.url), expected_url, "url")
     assert_equal(response.file.filename, request.filename, "filename")
     assert_equal(response.file.directory, request.directory, "directory")
@@ -76,6 +82,7 @@ def assert_create_file_with_empty_filename_response(
                       ]  # Ошибка возникает в теле запроса, поле "filename".
         )
     ])
+    logger.info("Check create file with empty filename response")
     assert_validation_error_response(actual, expected)
 
 
@@ -101,6 +108,7 @@ def assert_create_file_with_empty_directory_response(
                       ]  # Ошибка возникает в теле запроса, поле "directory".
         )
     ])
+    logger.info("Check create file with empty directory response")
     assert_validation_error_response(actual, expected)
 
 
@@ -113,6 +121,7 @@ def assert_file_not_found_response(actual: IternalErrorResponseSchema):
     :raises AssertionError: Если фактический ответ не соответствует ошибке "File not found"
     """
     expected = IternalErrorResponseSchema(details="File not found")
+    logger.info("Check file not found response")
     assert_iternal_error_response(actual, expected)
 
 
@@ -137,5 +146,5 @@ def assert_get_file_with_incorrect_id_response(
                 "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1"
             })
     ])
-
+    logger.info("Check get file with incorrect id response")
     assert_validation_error_response(actual, expected)

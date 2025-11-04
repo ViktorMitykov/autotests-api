@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjQ5OjI4LjAyNTc3MiIsInVzZXJfaWQiOiIxZjVhZjczOS03NDcwLTRkYTEtYTc5Ni1lNzFkNzFiM2ZiMjgifQ.iNmIGxQhNT2kkxUwunHvKYf3KZ13ippfyH0YrgSnTus' \
+  -H 'content-length: 612' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Роса спорт четко командир цвет упор ребятишки.","maxScore":92,"minScore":19,"description":"Карман присесть близко серьезный столетие степь. Потом пространство выгнать художественный торопливый намерение видимо карандаш.\nКожа затянуться собеседник освободить торговля.","estimatedTime":"2 weeks","previewFileId":"17698df6-be16-4702-ba64-383a0666aab9","createdByUserId":"1f5af739-7470-4da1-a796-e71d71b3fb28"}'

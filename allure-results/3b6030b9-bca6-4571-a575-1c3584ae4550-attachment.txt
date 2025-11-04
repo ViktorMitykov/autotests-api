@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjUxOjQ5LjY0MjExMiIsInVzZXJfaWQiOiI2NWE5MzEwNi1mMmQ0LTQzMGQtODA1Ni0xM2FkOTgyNmJlNjcifQ.cJDctRgseEQHwtm9LE_w_jEFL-al_RMcbFPSDS3yUFs' \
+  -H 'content-length: 590' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Конструкция страсть возбуждение пятеро головной анализ отъезд.","maxScore":77,"minScore":7,"description":"Ягода социалистический сынок карман госпожа невозможно. Кидать правление смеяться функция мера оборот отметить. Постоянный сутки пропаганда вскинуть.","estimatedTime":"6 weeks","previewFileId":"ed1f997c-8c55-4745-b933-0bc0f889a0d0","createdByUserId":"65a93106-f2d4-430d-8056-13ad9826be67"}'

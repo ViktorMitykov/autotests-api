@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/8592f67a-beea-4896-aaf8-0883a69c3516' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjQ5OjMzLjIwMzU3NiIsInVzZXJfaWQiOiIyYWExYTgxMi0zMDI5LTQwMzItYmYyYS01OWYwNmNiNGMzYmUifQ.QZENFWcF69IPPEgVAQbQDUJ14WCMt3DKzHP9jhP-SBk' \
+  -H 'content-length: 554' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Поймать табак гулять академик прежний наступать угол недостаток.","maxScore":94,"minScore":5,"description":"Актриса место вздрагивать человечек. Прошептать счастье покидать левый социалистический.\nМонета пропадать премьера даль присесть пропасть смелый спасть. Каюта смелый болото угроза деловой.","estimatedTime":"8 weeks"}'

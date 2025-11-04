@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjUxOjU5LjkxMjE1MiIsInVzZXJfaWQiOiJjNGY0OTRkMS1mZjI2LTRkNjItYTVjMS02NjU4MTc0ODQ5N2IifQ.vnQjH-Z4EVdDw8GKoLykntHW3YaeNQ8GSwkBj3cPsk4' \
+  -H 'content-length: 571' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Опасность рабочий казнь правление набор девка.","maxScore":63,"minScore":28,"description":"Отъезд заработать жить ставить. Песенка картинка исполнять помолчать тесно художественный. Житель при возникновение июнь нервно ботинок пересечь еврейский.","estimatedTime":"3 weeks","previewFileId":"7ebe66ad-b7d1-40b8-961d-30b66bfa8dfc","createdByUserId":"c4f494d1-ff26-4d62-a5c1-66581748497b"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTAzVDEzOjA0OjEwLjcwMjA1MyIsInVzZXJfaWQiOiI2MTFlY2U2Ny1jMTQzLTQ5N2UtYWE2OC01MzdlN2ViM2Q3ZWQifQ.IXkZOsnJg1CSfe26Fy4n8msWXt__rEWfZ5D2UVQWbUM' \
+  -H 'content-length: 504' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Ведь совет коллектив соответствие видимо.","courseId":"81d0f28d-9b33-4667-b09c-1380c1607a79","maxScore":73,"minScore":24,"orderIndex":47,"description":"Ведь тута дошлый лететь оставить. Чем анализ посидеть похороны задержать исполнять результат. Запретить космос совет перебивать мучительно правление.","estimatedTime":"9 weeks"}'
