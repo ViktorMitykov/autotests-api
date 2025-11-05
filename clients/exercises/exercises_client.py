@@ -7,6 +7,7 @@ from clients.api_client import ApiClient
 from httpx import Response
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 from clients.exercises.exercises_schema import GetExercisesQuerySchema, GetExerciseResponseSchema, CreateExercisesRequestSchema, CreateExerciseResponseSchema, UpdateExerciseRequestApiSchema, UpdateExerciseResponseApiSchema
+from tools.routes import ApiRoutes
 
 
 class ExercisesClient(ApiClient):
@@ -21,7 +22,7 @@ class ExercisesClient(ApiClient):
         :param query: Словарь с courseId
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(url="/api/v1/exercises",
+        return self.get(url=f"{ApiRoutes.EXERCISES}",
                         params=query.model_dump(by_alias=True))
 
     def get_exrcises(
@@ -41,7 +42,7 @@ class ExercisesClient(ApiClient):
         :param exercise_id: Идентификатор курса
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(url=f"/api/v1/exercises/{exercise_id}")
+        return self.get(url=f"{ApiRoutes.EXERCISES}/{exercise_id}")
 
     def get_exercise(self, exercise_id: str) -> GetExerciseResponseSchema:
         """
@@ -60,7 +61,7 @@ class ExercisesClient(ApiClient):
         :param request: Словарь с title, courseId, maxScore, minScore, orderIndex, description, estimatedTime
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post(url="/api/v1/exercises",
+        return self.post(url=f"{ApiRoutes.EXERCISES}",
                          json=request.model_dump(by_alias=True))
 
     def create_exercise(
@@ -84,7 +85,7 @@ class ExercisesClient(ApiClient):
         :param request: Словарь с title, maxScore, minScore, orderIndex, description, estimatedTime
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(url=f"/api/v1/exercises/{exercise_id}",
+        return self.patch(url=f"{ApiRoutes.EXERCISES}/{exercise_id}",
                           json=request.model_dump(by_alias=True))
 
     def update_exercise(
@@ -107,7 +108,7 @@ class ExercisesClient(ApiClient):
         :param exercise_id: Идентификатор курса
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(url=f"/api/v1/exercises/{exercise_id}")
+        return self.delete(url=f"{ApiRoutes.EXERCISES}/{exercise_id}")
 
 
 def get_exercises_client(user: AuthenticationUserSchema) -> ExercisesClient:
