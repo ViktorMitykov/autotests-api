@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjEwOjA2Ljc2NzUxNSIsInVzZXJfaWQiOiJlYmFiNjhlNy05OGNkLTQwNGUtOGRiMi0wOWYzNzg0ZjRiZTUifQ.FQyTa5KO5wOp7o3S-ozDmbF_1Geq8BTqrAOYC_4YJ5E' \
+  -H 'content-length: 487' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Собеседник через валюта выкинуть способ падаль банда призыв.","maxScore":95,"minScore":18,"description":"Торговля да возмутиться тута. Мягкий палец мучительно возбуждение остановить прелесть необычный.","estimatedTime":"8 weeks","previewFileId":"36e4c82e-3835-4906-8057-8e60848352c1","createdByUserId":"ebab68e7-98cd-404e-8db2-09f3784f4be5"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjEwOjA3LjkyMDg4OCIsInVzZXJfaWQiOiJjODE0MWI0OS1jZGRmLTQwZDAtOTgyYy04ODNiY2YwMTU4NWIifQ.W76vpT_aAKtAmFDPPFSuBljJZalNuWtYQZ_UvcNTnbU' \
+  -H 'content-length: 415' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Освобождение упорно счастье услать поколение скрытый народ.","maxScore":86,"minScore":4,"description":"Вчера прежде другой деловой коллектив рассуждение актриса.","estimatedTime":"10 weeks","previewFileId":"1b2f301b-661f-48b5-be36-33a6b2146e3f","createdByUserId":"c8141b49-cddf-40d0-982c-883bcf01585b"}'

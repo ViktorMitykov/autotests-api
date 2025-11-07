@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjEwOjA3LjY0ODEzNCIsInVzZXJfaWQiOiI5MTY4MmMyZS00ZTU3LTRkMGItYmMxZC0wYjc1ZTlkZGY4YTkifQ.ddmhW9qAvbp-GGRpv3NGF7agboSLjpL_NiTKaYqncHA' \
+  -H 'content-length: 549' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Поймать термин расстройство ягода район призыв прежний.","maxScore":60,"minScore":16,"description":"Прощение полевой применяться интернет мелькнуть возможно лететь. Миф крыса спорт цель. Опасность страсть вариант цель услать наступать.","estimatedTime":"2 weeks","previewFileId":"41a548cd-ca54-41b3-b2ae-b78c1f0d9658","createdByUserId":"91682c2e-4e57-4d0b-bc1d-0b75e9ddf8a9"}'

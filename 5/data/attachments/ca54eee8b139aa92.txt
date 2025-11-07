@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/fd626f08-48c4-482a-8391-7c1a6f3df836' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjEwOjA2LjEyMTQ1NiIsInVzZXJfaWQiOiIwOTA4ZDhiMi0yNGZmLTQyOGMtYjkxZC0xMjgxMTUwYmVkNjAifQ.CjUeohNQPWM_tK_mk3FHoiJ3XOq1I5dRj0F83aAiR4w' \
+  -H 'content-length: 492' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Порода указанный через нажать сустав кпсс назначить.","maxScore":99,"minScore":7,"description":"Намерение монета реклама витрина бетонный самостоятельно. Совещание мимо висеть число оставить подробность функция. Секунда передо выразить идея интернет развернуться.","estimatedTime":"4 weeks"}'

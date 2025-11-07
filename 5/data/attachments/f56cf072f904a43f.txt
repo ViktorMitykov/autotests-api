@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjEwOjA4LjgyODE0NCIsInVzZXJfaWQiOiI0ZmEwY2EzZi1mOTJhLTRkZDYtYmI3Ny1jOWVjMzVjMDdiYjgifQ.H1nchluuCLoN__oLZgZHhba6Mqaxgz99rJcpprpj9Cg' \
+  -H 'content-length: 493' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Аллея носок печатать развитый.","courseId":"ce853411-4af0-4ee3-8b41-4b5d1429f1bf","maxScore":70,"minScore":4,"orderIndex":37,"description":"Изменение зеленый устройство вперед человечек вздрагивать. Жестокий песенка роса. Освобождение неправда похороны намерение запеть угроза падать скользить.","estimatedTime":"2 weeks"}'

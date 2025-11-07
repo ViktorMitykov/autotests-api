@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjEwOjA4LjgyODE0NCIsInVzZXJfaWQiOiI0ZmEwY2EzZi1mOTJhLTRkZDYtYmI3Ny1jOWVjMzVjMDdiYjgifQ.H1nchluuCLoN__oLZgZHhba6Mqaxgz99rJcpprpj9Cg' \
+  -H 'content-length: 647' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Заработать каюта адвокат приятель задрать порог металл.","maxScore":57,"minScore":23,"description":"Лететь заявление салон трясти скользить. Следовательно скользить висеть настать более пересечь рис.\nЗатянуться ответить сустав что. Плавно лететь господь аллея задрать командир коллектив.","estimatedTime":"2 weeks","previewFileId":"6a988242-bafc-456f-b385-3d69161b2d7f","createdByUserId":"4fa0ca3f-f92a-4dd6-bb77-c9ec35c07bb8"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjEwOjA2LjEyMTQ1NiIsInVzZXJfaWQiOiIwOTA4ZDhiMi0yNGZmLTQyOGMtYjkxZC0xMjgxMTUwYmVkNjAifQ.CjUeohNQPWM_tK_mk3FHoiJ3XOq1I5dRj0F83aAiR4w' \
+  -H 'content-length: 593' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Правый очутиться нервно запустить.","maxScore":72,"minScore":28,"description":"Правый термин услать домашний единый дремать что девка. Валюта означать июнь указанный изменение.\nШтаб заведение рабочий. Багровый налоговый госпожа вздрогнуть хозяйка инструкция.","estimatedTime":"1 weeks","previewFileId":"7e96f2e0-6402-4c3d-b068-a6d4876c1d63","createdByUserId":"0908d8b2-24ff-428c-b91d-1281150bed60"}'

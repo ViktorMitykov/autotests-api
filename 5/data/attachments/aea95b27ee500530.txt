@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjEwOjEwLjAwNjAwMyIsInVzZXJfaWQiOiIzNDhlZGE2Zi0wMmUzLTQ0NzctYjAzMy04ZGNlZGVlZGY0YjIifQ.yf6cFid8JigvjUgbZ09E3mVdG3M26uOPAkMPeDLGiVE' \
+  -H 'content-length: 463' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Назначить расстегнуть приходить оставить легко забирать.","courseId":"48de01a8-2a72-4f8e-93fa-32cf68146883","maxScore":53,"minScore":30,"orderIndex":34,"description":"Разводить стакан бочок мальчишка неудобно премьера блин. Хотеть поколение деньги торопливый сынок пространство.","estimatedTime":"3 weeks"}'
