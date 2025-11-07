@@ -49,6 +49,8 @@ jobs:
 
       - name: Upload Allure results as artifact
         uses: actions/upload-artifact@v5
+        with:
+          path: allure-directory
 
 
   publish-report:
@@ -58,6 +60,8 @@ jobs:
     steps:
       - name: Download allure results artifact
         uses: actions/download-artifact@v5
+        with:
+          path: allure-directory
 
       - name: Get Allure history
         uses: actions/checkout@v5
