@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/5a7ef4f9-6afa-42a0-88c9-4c986c2dfaa4' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDExOjUyOjE0LjI3NzAzMiIsInVzZXJfaWQiOiIyODMzZGY4NS05NTU2LTQ3NjEtYWFkOS04MDVlM2QwOGE1YmUifQ.eEG-Sf8-6zhUN4z-UpipAl4XX5DAeQNnshYgdiDya74' \
+  -H 'content-length: 321' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Обида поставить неправда.","maxScore":58,"minScore":9,"description":"Пробовать исполнять ученый изба заявление жить. Белье танцевать помимо рота. Пасть бегать рай заявление.","estimatedTime":"8 weeks"}'

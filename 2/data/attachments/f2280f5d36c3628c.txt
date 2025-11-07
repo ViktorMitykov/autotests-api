@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDExOjUyOjE1LjQ5OTgzNyIsInVzZXJfaWQiOiI1MDc4YjRiNi1kNzc1LTQ4ODktYWJmMC00YjA5YjFmOGQwZmQifQ.kl5XTTT3IzLR4yAs_IqXNPcdZ4DX1iGOCI5oFqBw0Tc' \
+  -H 'content-length: 573' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Кидать беспомощный наткнуться.","maxScore":53,"minScore":18,"description":"Рабочий развернуться войти естественный что сутки аж эпоха. Желание отъезд поколение боец зачем одиннадцать некоторый. Успокоиться полностью вперед болото мотоцикл скрытый.","estimatedTime":"1 weeks","previewFileId":"c1742121-1a51-4c3b-803f-4e495eac2376","createdByUserId":"5078b4b6-d775-4889-abf0-4b09b1f8d0fd"}'

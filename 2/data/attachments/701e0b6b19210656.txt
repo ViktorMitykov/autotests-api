@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDExOjUyOjEzLjY5OTQzMCIsInVzZXJfaWQiOiI5YjZkMDMwMi04ODc4LTQwNzUtYjdjMS1mMTBmMmUyODlkY2UifQ.RHTAvTu6v3Sf65u5RW8zXp1nPtnLpj_3ViOz4Xgwhy0' \
+  -H 'content-length: 564' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Лиловый остановить растеряться мелькнуть.","maxScore":87,"minScore":12,"description":"Новый порог слать мусор цель демократия. Рис порт ярко теория заведение.\nКонференция уронить жидкий изредка. Банк спасть спалить порог миф поставить сходить.","estimatedTime":"10 weeks","previewFileId":"7e593130-a442-4732-9976-3af437c00134","createdByUserId":"9b6d0302-8878-4075-b7c1-f10f2e289dce"}'

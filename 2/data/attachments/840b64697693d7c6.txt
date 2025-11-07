@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDExOjUyOjE3LjMxMDcyMyIsInVzZXJfaWQiOiJlZThkNDA4Yi1iZWE0LTQxYmMtYTAzYi00NDZhNjUzNjY1ZTQifQ.cX9h9aFvCA4Jic7OYG_Jh6veuoSyIa7D59QD0xeOR-M' \
+  -H 'content-length: 534' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Угодный крутой более спорт умирать настать.","maxScore":72,"minScore":9,"description":"Страсть радость неожиданный пища. Печатать вздрогнуть радость зачем материя. Выбирать промолчать да выражаться да вскакивать разнообразный.","estimatedTime":"7 weeks","previewFileId":"4d58d118-4d76-4c9d-a055-5e4c0a5a0d70","createdByUserId":"ee8d408b-bea4-41bc-a03b-446a653665e4"}'

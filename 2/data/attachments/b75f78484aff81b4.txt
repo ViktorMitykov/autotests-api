@@ -1,0 +1,32 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make GET request to http://localhost:8000/api/v1/courses?userId=9b6d0302-8878-4075-b7c1-f10f2e289dce
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses?userId=9b6d0302-8878-4075-b7c1-f10f2e289dce
+INFO     BASE_ASSERTIONS:base.py:18 Check that status code equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of courses equals to 1
+INFO     COURSE_ASSERTIONS:course.py:70 Check get course response
+INFO     COURSE_ASSERTIONS:course.py:42 Check course
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     FILES_ASSERTIONS:files.py:23 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     USERS_ASSERTIONS:users.py:37 Check user
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     SCHEMA_ASSERTIONS:schema.py:14 Validate JSON schema

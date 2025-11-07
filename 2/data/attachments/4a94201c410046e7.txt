@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDExOjUyOjE0LjkxNDI0NCIsInVzZXJfaWQiOiJlNDI2NGI2Zi0zYTliLTQxMTItYTYwOC02YzVmMzI2OWYyYTEifQ.0jDKQJwtCJYig4ew-D_FXbrhu2XNBW4WJZ-1-9s4ClQ' \
+  -H 'content-length: 532' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Оборот решетка задрать металл.","maxScore":79,"minScore":22,"description":"Растеряться один тяжелый освобождение цепочка четыре пробовать. Ведь серьезный деньги означать запретить ночь упорно. Механический избегать опасность.","estimatedTime":"5 weeks","previewFileId":"2daf186c-627d-494b-8a59-4b2764a84f83","createdByUserId":"e4264b6f-3a9b-4112-a608-6c5f3269f2a1"}'

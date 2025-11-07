@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDExOjUyOjE2LjA4MTU1OSIsInVzZXJfaWQiOiJhMzg0ZDIzYi0wMjJlLTRhMGMtYTgwNC0yNzhiMjY0OGEwMmMifQ.l0CwznHUamIgiplPaDKfCP0ETdC1O8mfz34nb8-DS7g' \
+  -H 'content-length: 545' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Помимо грустный неправда точно роса четко назначить.","maxScore":96,"minScore":2,"description":"Мальчишка назначить близко применяться. Песенка неудобно ложиться советовать деньги кожа. Тусклый тревога затянуться слишком скользить.","estimatedTime":"10 weeks","previewFileId":"f8edc539-f3a6-46d1-a31e-b3914df82cf4","createdByUserId":"a384d23b-022e-4a0c-a804-278b2648a02c"}'

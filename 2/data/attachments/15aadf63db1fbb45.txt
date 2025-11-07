@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDExOjUyOjE0LjI3NzAzMiIsInVzZXJfaWQiOiIyODMzZGY4NS05NTU2LTQ3NjEtYWFkOS04MDVlM2QwOGE1YmUifQ.eEG-Sf8-6zhUN4z-UpipAl4XX5DAeQNnshYgdiDya74' \
+  -H 'content-length: 564' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Функция витрина поговорить куча лететь.","maxScore":71,"minScore":14,"description":"Бровь тута пробовать при намерение механический. Еврейский передо ночь каюта плод. Неправда уничтожение человечек премьера художественный демократия премьера.","estimatedTime":"7 weeks","previewFileId":"d056102e-50ec-473b-ae84-0a4d5021f2c9","createdByUserId":"2833df85-9556-4761-aad9-805e3d08a5be"}'

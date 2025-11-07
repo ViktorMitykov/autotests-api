@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDExOjUyOjE3Ljg4ODg3OCIsInVzZXJfaWQiOiIxNzljNzljMS01NWMwLTQwMmMtYmQ3Ny0xODk3ZjdmMmJjYzcifQ.7SnoPfypmg1bwwl_-e-qm_Sv1f0iB8hndmD7TXNEpAg' \
+  -H 'content-length: 456' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Столетие командование художественный неожиданно кузнец другой зато миф.","maxScore":73,"minScore":3,"description":"Тесно изредка кожа слишком пламя чувство носок. Рай жить товар палата.","estimatedTime":"3 weeks","previewFileId":"1558d212-20be-46d9-87d7-3510d3fd3a38","createdByUserId":"179c79c1-55c0-402c-bd77-1897f7f2bcc7"}'
