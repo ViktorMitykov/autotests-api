@@ -45,7 +45,7 @@ jobs:
 
       - name: Run API tests with pytest and generate Allure results
         run: |
-          pytest -m regression --aluredir=allure-results --numprocesses 2
+          pytest -m regression --alluredir=allure-results --numprocesses 2
 
       - name: Get Allure history
         uses: actions/checkout@v5
@@ -69,4 +69,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-history
-#for commit 2 3 4
+#for commit 2 3 4 5
