@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjE1LjQ5MDI3MCIsInVzZXJfaWQiOiJmOWNhYTQwMi1lZDg3LTQ4YTEtYmU3Ny05YjIxZDcwMDI2YTMifQ.S3O4OkIaB-1hSh6NPsD6Q78PiohsdyytDbmtEivYUKE' \
+  -H 'content-length: 535' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Уточнить написать актриса вывести мера.","maxScore":81,"minScore":13,"description":"Спешить падаль пятеро.\nУронить народ кольцо заработать означать выдержать бригада. Теория горький ныне видимо какой экзамен возникновение зима.","estimatedTime":"5 weeks","previewFileId":"8c7caf68-0e26-414e-921d-d28563708e7f","createdByUserId":"f9caa402-ed87-48a1-be77-9b21d70026a3"}'

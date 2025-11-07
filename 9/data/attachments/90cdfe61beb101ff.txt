@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjE3Ljc3OTY2NSIsInVzZXJfaWQiOiIwYjhlOTBhNS0yYTk0LTRlM2ItYjVhYS02MDAzMTE3NzdlNjIifQ.YPaikmfmHcgtQNCq7rX7Qbcnut75i1D66HTlyEPB57U' \
+  -H 'content-length: 560' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Мотоцикл собеседник руководитель иной радость идея приходить сверкать.","maxScore":53,"minScore":7,"description":"Дьявол парень обида. Соответствие необычный остановить сынок исполнять. Пасть что потянуться бок промолчать куча порт решетка.","estimatedTime":"9 weeks","previewFileId":"01020e9d-a7c3-42f3-aff4-c45450d8ae75","createdByUserId":"0b8e90a5-2a94-4e3b-b5aa-600311777e62"}'

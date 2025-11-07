@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjE1LjQ5MDI3MCIsInVzZXJfaWQiOiJmOWNhYTQwMi1lZDg3LTQ4YTEtYmU3Ny05YjIxZDcwMDI2YTMifQ.S3O4OkIaB-1hSh6NPsD6Q78PiohsdyytDbmtEivYUKE' \
+  -H 'content-length: 539' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Крутой тусклый сверкать очутиться степь сынок полюбить.","courseId":"43f26919-84d7-49e9-8bff-4faa26aed8e6","maxScore":54,"minScore":4,"orderIndex":34,"description":"Процесс секунда важный оставить уронить.\nГрудь демократия счастье мрачно прощение анализ результат. Болото четко граница смертельный проход материя князь.","estimatedTime":"7 weeks"}'

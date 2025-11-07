@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/07f639de-ace1-4811-81fa-7c0ceec21822' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjE0LjMzNDc0MCIsInVzZXJfaWQiOiJjMjM3ODA4ZS0yOGRlLTRlN2ItYmFhMy0yZDZkMjIxZTI3ZTEifQ.GNmNKzheUDlhTWa5zuPTdhAfpGt2XSgCwELzaTuBbDE' \
+  -H 'content-length: 487' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Освобождение багровый печатать выбирать покидать бровь исполнять.","maxScore":90,"minScore":18,"description":"Банк рис появление выражение. Столетие хлеб невыносимый порода слать засунуть успокоиться спасть. Отражение дыхание очко редактор неправда упор сустав.","estimatedTime":"8 weeks"}'

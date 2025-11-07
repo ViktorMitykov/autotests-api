@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjE3LjIyNjU1MyIsInVzZXJfaWQiOiI5OWFiNzllZC0wZmNhLTRhZGUtOWYwNy1iOTIzZWRjZTlkYzkifQ.EipTe-OA-MPNEzn75Hy7vmlJ26LJAbSREWOcsfAA2Tw' \
+  -H 'content-length: 563' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Умолять песня полевой некоторый интернет.","maxScore":89,"minScore":26,"description":"Естественный костер тяжелый провинция вряд изображать. Штаб художественный смертельный потом салон июнь.\nЯгода чем выраженный добиться засунуть заработать.","estimatedTime":"7 weeks","previewFileId":"c924a311-f429-4888-84c4-e919505f3f3e","createdByUserId":"99ab79ed-0fca-4ade-9f07-b923edce9dc9"}'

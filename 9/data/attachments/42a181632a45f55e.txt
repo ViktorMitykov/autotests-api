@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/47a049de-4c4a-4f7b-8b76-eabfcd936409' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjE2LjA0OTI1MSIsInVzZXJfaWQiOiJkOGNmNmY5MS05ZjE2LTRhM2UtODQ3OC01MDRiZjdkNzViMzkifQ.DR4q9rE-qVvx-B7yyyQ3lp6Wk_QRhg5U-9BrqaB52bk' \
+  -H 'content-length: 349' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Некоторый процесс поймать.","maxScore":89,"minScore":15,"orderIndex":47,"description":"Коммунизм желание карман вздрагивать. Легко райком пища ныне.\nБолее нажать соответствие ночь ставить отъезд.","estimatedTime":"5 weeks"}'

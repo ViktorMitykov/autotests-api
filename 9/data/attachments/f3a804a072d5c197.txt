@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjEzLjc3ODQwNCIsInVzZXJfaWQiOiJhOGM0NjA0Ny1jZWM0LTRmODMtOGQ3Ni03ZjFiZWZlODc3ZDUifQ.750irKrsdWuSj3MNX8lIr8dXfz0yJ2Wg2T3qAMCJEfs' \
+  -H 'content-length: 571' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Выбирать пол коробка мучительно лиловый.","maxScore":100,"minScore":14,"description":"Пробовать премьера академик эффект спичка равнодушный отъезд. Спичка висеть юный носок одиннадцать.\nФонарик сустав важный. Бегать проход заплакать освобождение.","estimatedTime":"10 weeks","previewFileId":"7bd6078e-fa0e-46aa-afe2-130cbb6121a6","createdByUserId":"a8c46047-cec4-4f83-8d76-7f1befe877d5"}'

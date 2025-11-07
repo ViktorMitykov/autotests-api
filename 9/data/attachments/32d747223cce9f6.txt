@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjE0LjMzNDc0MCIsInVzZXJfaWQiOiJjMjM3ODA4ZS0yOGRlLTRlN2ItYmFhMy0yZDZkMjIxZTI3ZTEifQ.GNmNKzheUDlhTWa5zuPTdhAfpGt2XSgCwELzaTuBbDE' \
+  -H 'content-length: 658' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Назначить материя деловой изба вздрагивать адвокат ремень.","maxScore":87,"minScore":19,"description":"Очко плясать правильный печатать. Умирать пропаганда выраженный вряд изредка зеленый носок идея. Вздрогнуть проход грудь сходить.\nЧисло выбирать увеличиваться. Кпсс дурацкий запеть премьера.","estimatedTime":"3 weeks","previewFileId":"ff6ec03f-0932-49fa-aa36-a13fdd54be12","createdByUserId":"c237808e-28de-4e7b-baa3-2d6d221e27e1"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjE2LjYxMzIwMyIsInVzZXJfaWQiOiJkZjA1NDZlZi0zOTE4LTQ4NWUtOWJkOC1iOWViNGQ1ZjRmMDgifQ.3rbv8hxOIMCEsnVXVUO_DGlmjy5lPjjD8DnC6hKrpvk' \
+  -H 'content-length: 613' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Зеленый выраженный порядок.","maxScore":81,"minScore":18,"description":"Отъезд устройство поколение счастье нервно.\nВскакивать протягивать господь инфекция степь. Горький интеллектуальный пересечь освобождение мера. Развитый вскакивать поймать вперед премьера парень.","estimatedTime":"3 weeks","previewFileId":"a42a2a90-740b-4428-9e25-dabd68b2f2a7","createdByUserId":"df0546ef-3918-485e-9bd8-b9eb4d5f4f08"}'

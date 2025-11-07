@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA3VDE1OjMxOjE0LjkzNDM0NyIsInVzZXJfaWQiOiJjZjY1NmZkYy0xNDRiLTQ0MTQtOTk0Yi1jMTIyYWM0ZDJlMTYifQ.WcIP-OVYjnmh3nLuT2VanN_uk8mAQ4XmmWThty2FDfE' \
+  -H 'content-length: 662' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Правление наслаждение поезд головка увеличиваться невозможно.","maxScore":97,"minScore":23,"description":"Человечек пропадать премьера левый покидать. Сохранять волк опасность термин госпожа скользить низкий.\nЗабирать призыв засунуть лиловый. Выразить сынок госпожа советовать посвятить район.","estimatedTime":"10 weeks","previewFileId":"687473b8-b0e7-46a7-94e9-b0965e67ae83","createdByUserId":"cf656fdc-144b-4414-994b-c122ac4d2e16"}'
