@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjU0LjIwMDQ2OSIsInVzZXJfaWQiOiI1ZWQzZTRjMi0wNmJkLTQ4YTUtYWUyMy1hMjMzOGFiMThjNDEifQ.9Mh2nU1orDVYQcQaIHksqu9v3w7WJPlMPcUzq1NQTLY' \
+  -H 'content-length: 534' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Мальчишка костер плавно.","maxScore":72,"minScore":7,"description":"Беспомощный очередной издали рай вариант ученый термин смертельный. Пастух тюрьма очутиться возмутиться. Рай каюта подземный развитый упор выраженный славный.","estimatedTime":"3 weeks","previewFileId":"ce1d00e3-8911-45e1-a1fa-69045d910892","createdByUserId":"5ed3e4c2-06bd-48a5-ae23-a2338ab18c41"}'

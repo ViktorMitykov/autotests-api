@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/b2d8d928-604e-417c-8bf1-5ba79d18855b' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjUzLjAxMzEzMyIsInVzZXJfaWQiOiJmZGJiY2RiNi1kYzg5LTRmMmUtOTkzZC1iYzEwZGEzZmQ2ZGIifQ.vEWiiViAmLuXLJQANpOmsiwq8XNpUSXsEIt7YbdYobU' \
+  -H 'content-length: 459' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Применяться близко экзамен палка бетонный.","maxScore":91,"minScore":18,"orderIndex":96,"description":"Еврейский палец порог похороны кпсс выгнать совет горький. Некоторый выраженный монета достоинство один полюбить. Решетка роскошный отражение зеленый.","estimatedTime":"10 weeks"}'

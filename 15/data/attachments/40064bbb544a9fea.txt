@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjUyLjc0MDc5NCIsInVzZXJfaWQiOiI0ODg0MTZjZC01MmMwLTQyMjUtYjE2Zi1iMDUzZjFhM2MxYjAifQ.rCL372y4DJtD01P7dUha_06a8gmTE5In265BGg2TeNA' \
+  -H 'content-length: 450' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Да носок боец дурацкий миллиард.","maxScore":81,"minScore":10,"description":"Инвалид светило совещание легко пища. Функция забирать армейский полоска. Набор спичка миф бегать ботинок.","estimatedTime":"1 weeks","previewFileId":"3e0955b6-9937-4f66-b53b-1fc00b70038c","createdByUserId":"488416cd-52c0-4225-b16f-b053f1a3c1b0"}'

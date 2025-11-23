@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjU1LjEzNzQ2MyIsInVzZXJfaWQiOiI2ZjZhOGFiNC1lNDBlLTQ0MjMtODkxNi0yOTA1Mzk4MTdmZjUifQ.SrbLIUvCdlsLDaSsuPVELOYREwlxScEYaUMpkrkhIqM' \
+  -H 'content-length: 541' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Фонарик плод более естественный роса.","maxScore":99,"minScore":24,"description":"Парень столетие единый тусклый. Четыре исполнять сопровождаться выражаться сутки расстегнуть потом. Увеличиваться термин уточнить социалистический.","estimatedTime":"4 weeks","previewFileId":"5c2a08d9-903d-4d76-bc73-97489bc1d48d","createdByUserId":"6f6a8ab4-e40e-4423-8916-290539817ff5"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/a2de81bf-49ca-401c-9163-7fcade81be35' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjUxLjI4NDQ5MCIsInVzZXJfaWQiOiIxNjI4ODBiOS1iMWI0LTRiMWMtYjllYi05OTBhOGFmNDg3MmIifQ.0HoV1k4_S-ssNe6HTEptCIiGeY1INff0j6DqM0RAM5w' \
+  -H 'content-length: 283' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Степь оборот плод остановить степь ломать роса.","maxScore":90,"minScore":26,"description":"Точно полоска цвет командир житель. Хотеть носок пятеро шлем.","estimatedTime":"10 weeks"}'

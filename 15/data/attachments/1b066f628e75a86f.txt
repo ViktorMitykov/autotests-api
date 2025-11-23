@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjUzLjAxMzEzMyIsInVzZXJfaWQiOiJmZGJiY2RiNi1kYzg5LTRmMmUtOTkzZC1iYzEwZGEzZmQ2ZGIifQ.vEWiiViAmLuXLJQANpOmsiwq8XNpUSXsEIt7YbdYobU' \
+  -H 'content-length: 430' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Юный конференция рай вскакивать неожиданно одиннадцать.","maxScore":51,"minScore":7,"description":"Гулять цвет костер неожиданно. Новый правый затянуться оборот заложить.","estimatedTime":"1 weeks","previewFileId":"e4be745a-90b7-47b5-80e4-1d55501804cb","createdByUserId":"fdbbcdb6-dc89-4f2e-993d-bc10da3fd6db"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjUxLjg2NjE1OCIsInVzZXJfaWQiOiJmY2JhMDY4Ny0zOTE1LTQ1MDUtOTlhNi04NmQ0N2M5NzBjMTMifQ.LTYC4NvC3yzrk0K6ZVJdspr3LUlr6Ihu1pGdXzeENgc' \
+  -H 'content-length: 608' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Район новый темнеть растеряться появление манера художественный.","maxScore":67,"minScore":2,"description":"Ныне четыре рай факультет функция. Бетонный вперед забирать витрина встать спешить. Граница терапия зеленый дружно.\nПрежний пастух неожиданно художественный.","estimatedTime":"2 weeks","previewFileId":"4ffe9078-c296-49cb-9adf-f7f13011838c","createdByUserId":"fcba0687-3915-4505-99a6-86d47c970c13"}'

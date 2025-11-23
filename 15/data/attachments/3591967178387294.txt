@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjUyLjc0MDc5NCIsInVzZXJfaWQiOiI0ODg0MTZjZC01MmMwLTQyMjUtYjE2Zi1iMDUzZjFhM2MxYjAifQ.rCL372y4DJtD01P7dUha_06a8gmTE5In265BGg2TeNA' \
+  -H 'content-length: 610' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Выдержать дальний упор сопровождаться непривычный ход.","courseId":"51f660af-c6a5-46a2-8e7f-b98831dcbd60","maxScore":64,"minScore":11,"orderIndex":81,"description":"Естественный скрытый вчера неправда посидеть выразить. Костер бабочка число зачем рис сопровождаться тревога. Господь палец парень степь.\nТерапия ведь еврейский какой. Разнообразный бровь ярко.","estimatedTime":"8 weeks"}'

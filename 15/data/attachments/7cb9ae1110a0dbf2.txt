@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjUxLjI4NDQ5MCIsInVzZXJfaWQiOiIxNjI4ODBiOS1iMWI0LTRiMWMtYjllYi05OTBhOGFmNDg3MmIifQ.0HoV1k4_S-ssNe6HTEptCIiGeY1INff0j6DqM0RAM5w' \
+  -H 'content-length: 544' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Прощение лиловый избегать бочок.","maxScore":83,"minScore":3,"description":"Карман намерение приятель очко ведь тревога. Разуметься функция печатать коробка заведение бок. Наслаждение ручей недостаток сохранять материя палец тесно.","estimatedTime":"10 weeks","previewFileId":"09b5d3e1-c3a0-48a0-aa50-f5488e55b089","createdByUserId":"162880b9-b1b4-4b1c-b9eb-990a8af4872b"}'

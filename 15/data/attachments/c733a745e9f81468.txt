@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjQxOjUwLjY5MDUwOCIsInVzZXJfaWQiOiIzMjAyMDY0Yy1iN2QzLTQzMmYtYTA5Ny01Y2YyNTEzYmUyN2UifQ.9z3Kl_d_r6NLDZt_l7BB4eFSHBiy24Mzx5sBfhj_nXY' \
+  -H 'content-length: 614' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Салон подробность триста потянуться спорт реклама.","maxScore":89,"minScore":19,"description":"Тревога вывести бак вперед. Лапа спичка командование славный роскошный необычный космос.\nТемнеть выбирать порт бабочка. Направо непривычный господь ломать вздрогнуть головка.","estimatedTime":"4 weeks","previewFileId":"9beb2d17-2fb5-4b4b-a4c6-544adc0aeb82","createdByUserId":"3202064c-b7d3-432f-a097-5cf2513be27e"}'
