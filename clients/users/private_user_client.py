@@ -7,6 +7,7 @@ from clients.api_client import ApiClient
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 from clients.users.users_schema import GetUserResponseSchema, UpdateUserRequestSchema
 from tools.routes import ApiRoutes
+from clients.api_coverage import tracker
 
 
 class PrivateUserClient(ApiClient):
@@ -15,6 +16,7 @@ class PrivateUserClient(ApiClient):
     """
 
     @allure.step("Get user me")
+    @tracker.track_coverage_httpx(f"{ApiRoutes.USERS}/me")
     def get_user_me_api(self) -> Response:
         """
         Метод получения текущего юзера
@@ -23,6 +25,7 @@ class PrivateUserClient(ApiClient):
         return self.get(url=f"{ApiRoutes.USERS}/me")
 
     @allure.step("Get user by id {user_id}")
+    @tracker.track_coverage_httpx(f"{ApiRoutes.USERS}/users/{{user_id}}")
     def get_user_api(self, user_id: str) -> Response:
         """
         Метод получения юзера по идентификатору
@@ -41,6 +44,7 @@ class PrivateUserClient(ApiClient):
         return GetUserResponseSchema.model_validate_json(response.text)
 
     @allure.step("Update user by id{user_id}")
+    @tracker.track_coverage_httpx(f"{ApiRoutes.USERS}/users/{{user_id}}")
     def update_user_api(self, user_id: str, request: UpdateUserRequestSchema) -> Response:
         """
         Метод обновления юзера по идентификатору.
@@ -52,6 +56,7 @@ class PrivateUserClient(ApiClient):
                           json=request.model_dump(by_alias=True))
 
     @allure.step("Delete user by id{user_id}")
+    @tracker.track_coverage_httpx(f"{ApiRoutes.USERS}/users/{{user_id}}")
     def delete_user_api(self, user_id: str) -> Response:
         """
         Метод удаления юзера по идентификатору

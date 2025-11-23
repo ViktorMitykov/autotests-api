@@ -7,6 +7,8 @@ from clients.api_client import ApiClient
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 from clients.courses.courses_schema import GetCoursesQuerySchema, CreateCourseRequestSchema, CreateCourseResponseSchema, UpdateCourseRequestSchema
 from tools.routes import ApiRoutes
+from clients.api_coverage import tracker
+
 
 class CoursesClient(ApiClient):
     """
@@ -14,6 +16,7 @@ class CoursesClient(ApiClient):
     """
 
     @allure.step("Get courses")
+    @tracker.track_coverage_httpx(f"{ApiRoutes.COURSES}")
     def get_courses_api(self, query: GetCoursesQuerySchema) -> Response:
         """
         Метод для получения списка курсов
@@ -24,6 +27,7 @@ class CoursesClient(ApiClient):
                         params=query.model_dump(by_alias=True))
 
     @allure.step("Create course")
+    @tracker.track_coverage_httpx(f"{ApiRoutes.COURSES}")
     def create_course_api(self, request: CreateCourseRequestSchema) -> Response:
         """
         Метод для создания курсов
@@ -43,6 +47,7 @@ class CoursesClient(ApiClient):
         return CreateCourseResponseSchema.model_validate_json(response.text)
 
     @allure.step("get course by id {course_id}")
+    @tracker.track_coverage_httpx(f"{ApiRoutes.COURSES}/{{course_id}}")
     def get_course_api(self, course_id: str) -> Response:
         """
         Метод получения курса
@@ -52,6 +57,7 @@ class CoursesClient(ApiClient):
         return self.get(url=f"{ApiRoutes.COURSES}/{course_id}")
 
     @allure.step("Update course by id {course_id}")
+    @tracker.track_coverage_httpx(f"{ApiRoutes.COURSES}/{{course_id}}")
     def update_course_api(self, course_id: str, request: UpdateCourseRequestSchema) -> Response:
         """
         Метод обновления курса
@@ -63,6 +69,7 @@ class CoursesClient(ApiClient):
                           json=request.model_dump(by_alias=True))
 
     @allure.step("Delete course by {course_id}")
+    @tracker.track_coverage_httpx(f"{ApiRoutes.COURSES}/{{course_id}}")
     def delete_course_api(self, course_id: str) -> Response:
         """
         Метод удаления курса
