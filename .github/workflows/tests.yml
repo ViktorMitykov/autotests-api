@@ -74,6 +74,7 @@ jobs:
           path: coverage.html
 
       - name: Upload Allure results as artifact
+        if: always()
         uses: actions/upload-artifact@v5
         with:
           name: allure-results
@@ -81,22 +82,22 @@ jobs:
 
 
   publish-report:
-    needs: run-tests
+    if: always()
+    needs: [ run-tests ]
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
       - name: Download allure results artifact
         uses: actions/download-artifact@v6
         with:
           name: allure-results
-
-      - name: Get Allure history
-        uses: actions/checkout@v5
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
+          path: allure-results
 
       - name: Generates Allure Report with history
         uses: simple-elf/allure-report-action@v1.13
