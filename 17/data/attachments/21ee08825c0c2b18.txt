@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDE0OjAwOjM2LjYxOTk2MSIsInVzZXJfaWQiOiI0YTA4ODljMC1iNjk4LTQxZmUtOWNkNy1lYWUxYzE0ZGNhOGMifQ.HgCLmUFvUAHmaDFmPhg1uznVVORDX0b0eC89WnMukhE' \
+  -H 'content-length: 415' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Жестокий полевой народ.","maxScore":90,"minScore":20,"description":"Зеленый адвокат зима бок выдержать. Тяжелый сомнительный картинка висеть ручей белье скользить.","estimatedTime":"6 weeks","previewFileId":"8b8c7efb-77c3-4b7f-9c2f-457f169208cf","createdByUserId":"4a0889c0-b698-41fe-9cd7-eae1c14dca8c"}'

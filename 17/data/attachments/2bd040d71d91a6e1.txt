@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDE0OjAwOjM3LjI0NDc2NiIsInVzZXJfaWQiOiJiNmZkZDgxMy02YTI3LTQzNDQtYTkwOS1hMzNlNjc0YzdlM2EifQ.CPA_p_943LOx212coVXwFLvvt2SIO9Y8PjQG9ri08BQ' \
+  -H 'content-length: 587' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Юный хотеть задержать господь танцевать.","courseId":"d17fb522-fc74-46e9-901c-99cbbbac6495","maxScore":77,"minScore":11,"orderIndex":31,"description":"Возбуждение поговорить голубчик умолять прошептать. Рабочий вряд монета дошлый пятеро инструкция порог. Триста мягкий лететь выраженный правый актриса. Степь плод пересечь актриса встать природа.","estimatedTime":"1 weeks"}'

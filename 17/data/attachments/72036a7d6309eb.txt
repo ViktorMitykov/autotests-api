@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/32b25419-7eb4-40cd-9378-90b3136dcb28' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDE0OjAwOjM2LjA0MjA1NiIsInVzZXJfaWQiOiJiNDY4NDE5MS0zMTMyLTQxMjQtODgxNC1iMzBhM2VjYjBjNGMifQ.-CpzwSAA7y_LwxNSYbitelAPkDdDq5e2pbXaTKZXPxI' \
+  -H 'content-length: 347' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Угодный правление головка возможно наткнуться место голубчик.","maxScore":61,"minScore":16,"orderIndex":85,"description":"Банда степь дальний рабочий. Белье аллея неправда руководитель ход цвет.","estimatedTime":"6 weeks"}'

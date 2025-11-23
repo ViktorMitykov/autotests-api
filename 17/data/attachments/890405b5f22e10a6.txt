@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDE0OjAwOjM0LjI1NTM4NSIsInVzZXJfaWQiOiJmYjZiZjhjMS1iYzFmLTQwMWQtYjM3ZC0xMWM0ODkzZTdkMmEifQ.Dd6GIRoxZMl1pwxBUwgdl-UHmJt3FRh6wX9_oGY0CuM' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Угол вытаскивать выраженный.","maxScore":78,"minScore":12,"description":"Бегать нажать рот танцевать. Бровь добиться коммунизм направо инфекция неожиданный.","estimatedTime":"7 weeks","previewFileId":"bd6c0099-2fc7-4a6c-978e-e9db5aa09bff","createdByUserId":"fb6bf8c1-bc1f-401d-b37d-11c4893e7d2a"}'

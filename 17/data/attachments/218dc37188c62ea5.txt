@@ -1,0 +1,24 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:26 Make GET request to http://localhost:8000/api/v1/exercises/5e68e457-08e2-407f-9d61-5628dfaf8d5f
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/5e68e457-08e2-407f-9d61-5628dfaf8d5f
+INFO     BASE_ASSERTIONS:base.py:18 Check that status code equals to {expected}
+INFO     EXERCISES_ASSERTIONS:exercises.py:67 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:21 Check exercise
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     BASE_ASSERTIONS:base.py:35 Check that {name} equals to {expected}
+INFO     SCHEMA_ASSERTIONS:schema.py:14 Validate JSON schema

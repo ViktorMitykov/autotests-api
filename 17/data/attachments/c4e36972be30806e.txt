@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDE0OjAwOjM3LjgyMjk5OSIsInVzZXJfaWQiOiJhN2U1YjIzMy1hOWZiLTQzZTctYWEyZS0yMTUwNDhmNjEzMGMifQ.43cjXYC9mrCRSokwCXgWEKw8qwsYKCsR9QXc6eBC5ic' \
+  -H 'content-length: 581' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Точно помолчать очередной настать угол сверкать демократия.","maxScore":100,"minScore":23,"description":"Разуметься страсть мрачно оставить совет. Бригада шлем рота неправда дошлый. Тысяча серьезный палец очко изба хотеть. Снимать житель около посидеть.","estimatedTime":"10 weeks","previewFileId":"16997745-b8e8-4f56-90d0-583b94422fb7","createdByUserId":"a7e5b233-a9fb-43e7-aa2e-215048f6130c"}'

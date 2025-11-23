@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDE0OjAwOjM0LjgzNjA1MiIsInVzZXJfaWQiOiI2MGNhOWFmNy0yYzUwLTQxOWUtOTE5NS0zY2RhOGI4MTJiMGEifQ.hYLI6aZmS2pTA5ZPg_HbGdkrgcnHRYOd9t8aSxYiszU' \
+  -H 'content-length: 512' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Ребятишки понятный художественный пламя неожиданный процесс.","maxScore":88,"minScore":26,"description":"Мимо второй порядок желание хозяйка. Падать разуметься боец палка. Невозможно наслаждение оставить армейский.","estimatedTime":"6 weeks","previewFileId":"8483a0bf-6ed5-4c5c-ba0d-d72bf4d8350f","createdByUserId":"60ca9af7-2c50-419e-9195-3cda8b812b0a"}'
