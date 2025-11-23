@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/6af71ce7-4b8f-41cd-b20f-ffca937c5e85' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjU0OjU3LjY0ODg3MSIsInVzZXJfaWQiOiJlM2ZhOTE5OC05MDI1LTQ1ZmEtYTk5ZS0yYjQzODM4MDA0YTIifQ.CUmaAoVCuBQXF-LLz96MKssT2Ka94im41wZEVzIt6eM' \
+  -H 'content-length: 426' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Потом умирать порядок тревога.","maxScore":55,"minScore":29,"description":"Предоставить выражаться поколение спорт выраженный издали. Материя порт рассуждение песенка куча демократия. Инфекция рота собеседник прежде применяться.","estimatedTime":"1 weeks"}'

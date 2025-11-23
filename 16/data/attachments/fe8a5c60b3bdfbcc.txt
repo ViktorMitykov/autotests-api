@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjU0OjU3LjY0ODg3MSIsInVzZXJfaWQiOiJlM2ZhOTE5OC05MDI1LTQ1ZmEtYTk5ZS0yYjQzODM4MDA0YTIifQ.CUmaAoVCuBQXF-LLz96MKssT2Ka94im41wZEVzIt6eM' \
+  -H 'content-length: 653' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Школьный человечек коробка багровый выраженный вчера.","maxScore":61,"minScore":17,"description":"Багровый устройство бок.\nПривлекать дыхание ныне картинка некоторый заявление. Командир возможно зима оставить поколение падать.\nВолк лапа бетонный житель зима тесно. Природа выраженный палка.","estimatedTime":"4 weeks","previewFileId":"befbb1e5-3ad0-41ac-aed0-f48d8f630a84","createdByUserId":"e3fa9198-9025-45fa-a99e-2b43838004a2"}'

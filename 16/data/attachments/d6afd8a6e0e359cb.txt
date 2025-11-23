@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjU1OjAxLjI1OTYxMCIsInVzZXJfaWQiOiI3Y2MxNjRjZS03MzMyLTRiZDMtODkwNC02ZWZmODU1NWNiZGQifQ.pL1LZfmVxpshoQSWOrODxWsQ77d6dXmPpa8GXoB3npk' \
+  -H 'content-length: 633' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Монета смеяться дьявол уточнить отражение.","maxScore":70,"minScore":8,"description":"Добиться нож выбирать.\nИнструкция руководитель художественный сутки нож. Понятный горький лететь место ребятишки скрытый угроза. Райком славный подробность четко выраженный отметить факультет.","estimatedTime":"5 weeks","previewFileId":"779cce45-543a-4af3-b6e0-4e4fead3c8f4","createdByUserId":"7cc164ce-7332-4bd3-8904-6eff8555cbdd"}'

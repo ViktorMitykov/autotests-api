@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjU0OjU4LjI5ODE1OCIsInVzZXJfaWQiOiJiYTBhMzk1ZS0xYTc5LTQzNDUtYmQ3MS1mNDYzMjU3ZjcwM2IifQ.SCGrybtYkr_O_ZnHSScz-XAA6kiYqlLcHwJ3IRTl8mk' \
+  -H 'content-length: 593' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Передо танцевать опасность легко.","maxScore":87,"minScore":9,"description":"Вряд естественный упорно триста левый посидеть. Возможно пересечь болото вывести свежий правление. Стакан командующий выгнать волк. Шлем правильный дыхание банк вздрагивать функция.","estimatedTime":"9 weeks","previewFileId":"5cb0abc7-5a58-4a84-a53c-0447b2930b91","createdByUserId":"ba0a395e-1a79-4345-bd71-f463257f703b"}'

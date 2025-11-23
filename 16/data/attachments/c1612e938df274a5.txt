@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjU1OjAxLjI1OTYxMCIsInVzZXJfaWQiOiI3Y2MxNjRjZS03MzMyLTRiZDMtODkwNC02ZWZmODU1NWNiZGQifQ.pL1LZfmVxpshoQSWOrODxWsQ77d6dXmPpa8GXoB3npk' \
+  -H 'content-length: 474' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Непривычный хлеб заложить порядок очко умолять господь.","courseId":"db503023-461a-4abc-bf55-fe83a10a2385","maxScore":62,"minScore":11,"orderIndex":78,"description":"Нажать бригада народ приходить мгновение крутой неожиданный. Изба реклама палка фонарик ботинок дорогой добиться какой.","estimatedTime":"6 weeks"}'

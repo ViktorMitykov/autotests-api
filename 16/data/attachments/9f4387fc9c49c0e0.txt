@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjU0OjU3LjA2NTYzOCIsInVzZXJfaWQiOiIzZWFjNWJiNi04MThlLTQ2NDUtYWI0NS05MDQ1NTc0NmVjMTUifQ.OQeTGJ8bbwt2aH0jxdnJuUpZQPTui1cukyxp3ST97lY' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Палец костер при.","maxScore":97,"minScore":18,"description":"Пространство пятеро актриса о гулять заложить песенка материя. Очко ученый число мучительно казнь.","estimatedTime":"2 weeks","previewFileId":"e8601c44-f3d4-41cd-aff9-593fbe79a79c","createdByUserId":"3eac5bb6-818e-4645-ab45-90455746ec15"}'

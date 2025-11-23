@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjU0OjU5LjQ2MzIwMSIsInVzZXJfaWQiOiI2YzE1ZGJhNC0zYjBiLTRkOTctYTY2ZS1jMjBiY2IxYzdiNjEifQ.2SDGpLRXWEMuYs_Ye_UU1HHpUNbjMx9IK5zCm5q8n4Y' \
+  -H 'content-length: 513' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Около мучительно сходить издали расстройство.","maxScore":92,"minScore":5,"description":"Спорт вариант заведение эффект граница мягкий. Настать бегать плод потом неправда трубка.\nСпалить слать основание потом сынок.","estimatedTime":"5 weeks","previewFileId":"23e2caad-348f-4e73-b266-13f4c3479589","createdByUserId":"6c15dba4-3b0b-4d97-a66e-c20bcb1c7b61"}'

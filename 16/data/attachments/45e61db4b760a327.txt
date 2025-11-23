@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjU1OjAwLjA1MDY5NCIsInVzZXJfaWQiOiIxODc1YjU5YS0wYWY1LTQxMzItYTBkZi0yM2IyODFlMmU0MjgifQ.Jds8QRduZlWpOqMAEDJaBdTecLplIVK9tYpnBc47Olk' \
+  -H 'content-length: 646' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Рот перебивать командование непривычный находить рота цвет идея.","maxScore":86,"minScore":7,"description":"Деловой князь роса падать приятель. Задержать плод приличный вперед забирать равнодушный свежий.\nКостер спорт скрытый правильный чувство. Витрина дорогой единый заплакать дружно.","estimatedTime":"2 weeks","previewFileId":"26ae1442-7448-445e-91cb-98f818e79811","createdByUserId":"1875b59a-0af5-4132-a0df-23b281e2e428"}'

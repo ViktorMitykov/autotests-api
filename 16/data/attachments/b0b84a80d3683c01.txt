@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEzOjU1OjAwLjA1MDY5NCIsInVzZXJfaWQiOiIxODc1YjU5YS0wYWY1LTQxMzItYTBkZi0yM2IyODFlMmU0MjgifQ.Jds8QRduZlWpOqMAEDJaBdTecLplIVK9tYpnBc47Olk' \
+  -H 'content-length: 529' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Фонарик около школьный.","courseId":"6e77b877-6d59-4b18-8a60-edbdaa73c30c","maxScore":59,"minScore":26,"orderIndex":14,"description":"Плавно указанный рабочий бочок цвет. Оборот свежий армейский цвет тревога понятный.\nМеханический теория радость горький. Подземный присесть князь недостаток механический доставать.","estimatedTime":"4 weeks"}'
